@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: darkseagreen;
+    color: white;
+    width: 200px;
+}
+
+h2 {
+    background-color: #567895;
+}
+
+a:hover {
+    background-color: yellow;
+}

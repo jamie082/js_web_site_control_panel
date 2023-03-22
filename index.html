@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="css_file.css">
+        </head>
+
+        <body>
+            <div class="box">
+                <h2>My Web Panel</h2>
+                <ul>
+                    <li><a href="./pages/linkedin.html" target="_blank" onclick="openWin();">LinkedIn</a></li>
+                    <li><a href="./pages/portfolio.html" target="_blank" onclick="openPortfolio();">Portfolio</a></li>
+                    <li><a href="./pages/e-mail.html">E-Mail</a></li>
+                </ul>
+
+                <script>
+                    function openWin() {
+                        /* Get image and change value 
+                        of src attribute */
+
+                        let newWin = window.open("http://www.linkedin.com", "hello", "width=1024, height=800")
+                        alert("Hello! I am an alert box!")
+
+                        newWin.document.write("Hello, world!");
+                    }
+
+                    function openPortfolio() { 
+                        /* Open portfolio web site */
+
+                        let newWin_2 = window.open("http://www.jamiemorrissey.tech", "hello", "width=1024, height=800")
+                        alert("This is my blog!")
+
+                        newWin_2.document.write("Hello, world!")
+
+                    }
+                </script>
+        </body>
+    </html>
+</div>
