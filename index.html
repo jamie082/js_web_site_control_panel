@@ -12,7 +12,6 @@
                     <li><a href="./pages/linkedin.html" target="_blank" onclick="openWin();">LinkedIn</a></li>
                     <li><a href="./pages/portfolio.html" target="_blank" onclick="openPortfolio();">Portfolio</a></li>
                     <li><a href="./pages/e-mail.html">E-Mail</a></li>
-                    <li><input type="button" name="my_button" value="Display Images"></a></li>
                 </ul>
 
                 <script>
@@ -35,17 +34,17 @@
                         newWin_2.document.write("Hello, world!")
                     }
 
-                    function display_image(src, width, height, alt) {
-                        var a = document.createElement("img");
-                        a.src = src;
-                        a.width = width;
-                        a.height = height;
-                        a.alt = alt;
+                    function show_image(src, width, height, alt) {
+                        var img = document.createElement("img");
+                        img.src = src;
+                        img.width = width;
+                        img.height = height;
+                        img.alt = alt;
                         document.body.appendChild(img);
                     }
-
-                    <button onClick="display_image(j_git.jpg', 276, 110, 'Google Logo');">Add Logo</button>
                 </script>
+
+                <button onClick="show_image('https://i.postimg.cc/bJVFpFkx/bg2.jpg', 276, 110, 'image shown');">Add Logo</button>
         </body>
     </html>
 </div>
